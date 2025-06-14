@@ -132,6 +132,71 @@ h6 {
     order: 3;
   }
 }
+@media (max-width: 1200px) {
+  .header .logo {
+    order: 1;
+  }
+
+  .header .header-cv-link {
+    order: 2;
+  }
+
+  .header .navmenu {
+    order: 3;
+  }
+}
+
+.myName{
+  overflow: hidden;
+      font-size: 4.6rem;
+      font-weight: 700;
+      border-right: 0.15em solid orange;
+      white-space: nowrap;
+      width: 0;
+      animation: typing 4s steps(20, end) forwards, blink 0.7s step-end infinite;
+}
+.myNamecon{
+  display: inline-block;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}.header-cv-link a,
+.header-cv-link a:visited,
+.header-cv-link a:focus,
+.header-cv-link a:active {
+  display: inline-block;
+  font-size: 0.9rem;
+  padding: 8px 16px;
+  background-color: #34b7a7;
+  border: 2px solid #34b7a7;
+  color: white !important;          /* prevent browser override */
+  text-decoration: none;
+  border-radius: 6px;
+  box-shadow: 0 4px 0 #2ea396;
+  transition: all 0.2s ease;
+  font-weight: 600;
+  position: relative;
+  top: 0;
+}
+
+.header-cv-link a:hover,
+.header-cv-link a:focus:hover,
+.header-cv-link a:visited:hover {
+  background-color: #2ea396;
+  box-shadow: 0 2px 0 #248f7f;
+  color: white !important;
+  border: none;
+}
 
 @media (min-width: 1200px) {
   .navmenu {
