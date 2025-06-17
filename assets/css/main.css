@@ -127,43 +127,26 @@ h6 {
   color: white !important;
   border: none;
 }
-.myName {
-  overflow: hidden;
-  font-size: 4.6rem;
-  font-weight: 700;
-  border-right: 0.15em solid orange;
-  white-space: nowrap;
-  width: 0;
-  animation: typing 4s steps(22, end) forwards, blink 0.7s step-end infinite;
-}
 
 
 @media (max-width: 1200px) {
-  .header .logo {
+  .header-cv-link {
     order: 1;
+  }
+  .header .logo {
+    order: 2;
+    font-size: 2.6rem;
   }
 
   .header .header-social-links {
-    order: 2;
+    order: 3;
   }
 
   .header .navmenu {
-    order: 3;
+    order: 4;
   }
 }
-@media (max-width: 1200px) {
-  .header .logo {
-    order: 1;
-  }
 
-  .header .header-cv-link {
-    order: 2;
-  }
-
-  .header .navmenu {
-    order: 3;
-  }
-}
 @media (max-width: 768px) {
   .header-cv-link {
     text-align: center;
@@ -171,7 +154,6 @@ h6 {
     margin-top: 10px;
   }
 }
-
 
 .myName{
   overflow: hidden;
@@ -230,7 +212,7 @@ h6 {
   50% { border-color: transparent; }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1500px) {
   .myName { font-size: 3rem; }
 }
 
